@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* tailwind css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+    @apply box-border m-0 p-0;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+
+    @screen xl-max {
+        font-size: 50%;
+    }
+
+    @screen sm-max {
+        font-size: 37%;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    // color: var(--text-color);
+    // background-color: var(--background-color);
+}

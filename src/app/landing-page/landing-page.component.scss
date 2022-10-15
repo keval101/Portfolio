@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'Conneqt Regular';
+    src: url('../../assets/fonts/ConneqtRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Carnova Semibold';
+    src: url('../../assets/fonts/CarnovaSemibold.otf');
+}
+
+.landing {
+    &__container {
+        background-color: #1c1d21;
+
+        &::before {
+            @apply absolute w-full h-full;
+            content: '';
+            background: radial-gradient(ellipse at top, rgba(61, 62, 66, 1), transparent);
+        }
+
+        
+        p {
+            font-size: 4rem; 
+            font-family: 'Carnova Semibold';
+        }
+    }
+
+    &__content {
+        @apply flex flex-col relative font-light uppercase leading-none;
+        font-size: 10rem;
+
+        .headline {
+            color: #9e9fa3;
+            padding-left: 1.4rem;
+
+            @screen sm-max {
+                padding-left: 0;
+            }
+
+            &::before {
+                @apply absolute;
+                content: '';
+                width: 75%;
+                height: 1rem;
+                background-color: #b5a373;
+                top: 40%;
+                right: 3rem;
+            }
+        }
+    
+        .subline {
+            @apply self-end pr-12;
+            margin-top: 3.2rem;
+            color: #b5a373;
+        }
+
+        .title {
+            @apply font-bold -mt-4 sm:-mt-16;
+            font-family: 'Conneqt Regular';
+            font-size: 20rem;
+            color: #dddddd;
+            letter-spacing: 3rem;
+
+            @screen sm-max {
+                font-size: 12rem
+            }
+        }
+    }
+}
