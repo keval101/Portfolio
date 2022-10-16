@@ -3,6 +3,48 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* root colours */
+:root {
+    --bg-color: #1c1d21;
+    // --primary-color: #b5a373;
+    --primary-color: #e9c149;
+    --secondary-color: #9e9fa3;
+
+    --text-color: #fff;
+
+    --max-width-limit: 1500px
+}
+
+@media screen and (max-width: 1500px) {
+    :root {
+        --max-width-limit: 1280px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    :root {
+        --max-width-limit: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --max-width-limit: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --max-width-limit: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --max-width-limit: 500px;
+    }
+}
+
 * {
     @apply box-border m-0 p-0;
     scroll-behavior: smooth;
@@ -22,6 +64,45 @@ html {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    // color: var(--text-color);
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     // background-color: var(--background-color);
 }
+
+.k-container {
+    @apply mx-auto;
+    max-width: var(--max-width-limit);
+}
+
+.section {
+    @apply py-28;
+
+    &-title {
+        @apply uppercase font-semibold mb-16;
+        font-size: 3rem;
+        color: var(--primary-color);
+        letter-spacing: 4px;
+    }
+}
+
+//scroll-bar css
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color); 
+  }

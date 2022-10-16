@@ -1,0 +1,27 @@
+.navbar {
+    @apply fixed z-10;
+    top: 0;
+    width: 100%;
+    max-width: var(--max-width-limit);
+    color: var(--secondary-color);
+    backdrop-filter: blur(8px);
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__items {
+        a {
+            @apply uppercase cursor-pointer px-10;
+            font-size: 2rem;
+            letter-spacing: 2px;
+            transition: all 0.2s ease;
+            &:hover,
+            &.active {
+                color: var(--primary-color);
+                transition: all 0.2s ease;
+            }
+        }
+    }
+}
