@@ -1,0 +1,27 @@
+.contact {
+    background: linear-gradient(transparent 50%, var(--bg-secondary-color) 50%) ;
+    &__container {
+        div:first-child {
+            background-color: rgb(53, 54, 56)
+        }
+        // width: 100vw;
+        // height: 100vh;
+    }
+    
+    &__content {
+        // width: 60%;
+        // background-color: red;
+        // background-color: rgba(61, 62, 66, 0.4);
+        &--heading {
+            @apply font-bold;
+            font-size: 5rem;
+            line-height: 1;
+        }
+
+        &--description {
+            @apply mt-12;
+            font-size: 1.6rem;
+            color: var(--secondary-color);
+        }
+    }
+}

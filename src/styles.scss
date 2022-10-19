@@ -6,6 +6,7 @@
 /* root colours */
 :root {
     --bg-color: #1c1d21;
+    --bg-secondary-color: rgba(61, 62, 66, 0.2);
     // --primary-color: #b5a373;
     --primary-color: #e9c149;
     --secondary-color: #9e9fa3;
@@ -70,11 +71,13 @@ body {
     // background-color: var(--background-color);
 }
 
+//container css
 .k-container {
     @apply mx-auto;
     max-width: var(--max-width-limit);
 }
 
+//section css
 .section {
     @apply py-28;
 
@@ -84,6 +87,14 @@ body {
         color: var(--primary-color);
         letter-spacing: 4px;
     }
+}
+
+//button css
+.button {
+    @apply py-4 px-16 uppercase;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    background-color: #f3c027;
 }
 
 //scroll-bar css
