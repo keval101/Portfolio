@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  @Output() closeSidebar = new EventEmitter();
+  @Input() scroll: number;
 
+  getScreenWidth: number;
+  isScrollDown: boolean;
+  isScrollClicked: boolean;
   constructor() { }
 
   ngOnInit(): void {
-
   }
   
   checkForActiveClass(event: any): void {
@@ -23,6 +27,12 @@ export class NavbarComponent implements OnInit {
         event.target.classList.add('active')
       }
     }
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      setTimeout(() => {
+        this.closeSidebar.emit();
+      }, 0);
+     }
   }
 
 }

@@ -1,0 +1,96 @@
+.menu-toggle {
+    @apply fixed p-2 cursor-pointer rounded-full flex justify-center items-center flex-col;
+    top: 10px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    z-index: 1000;
+
+    .line {
+        @apply block rounded-full;
+        background-color: #fff;
+        width: 80%;
+        height: 2px;
+        transition: all 0.4s ease;
+
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+
+    .line1 {
+        transform: translateY(7px) rotate(135deg);
+        transition: all 0.4s ease;
+    }
+    .line3 {
+        transform: rotate(-140deg);
+        transition: all 0.4s ease;
+    }
+    .line2 {
+        display: none;
+    }
+}
+
+.navigation-bar {
+    @apply absolute top-0 w-full;
+    transition: all 0.8s ease-in;
+
+    @screen sm-max {
+        @apply fixed z-50;
+        transform: translateX(-800px);
+        transition: all 0.8s ease-in;
+    }
+    
+    &.open-menu {
+        transform: translateX(0);
+        transition: all 0.8s ease-in;
+    }
+}
+
+.paddingClass {
+    padding-bottom: 9px;
+}
+
+
+.top-toggle {
+    @apply fixed rounded-full;
+    background-color: var(--primary-color);
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+    opacity: 1;
+    animation: to-bottom 0.5s ease-in;
+}
+
+.toggle.top-toggle {
+    animation: to-top 1s ease-in;
+}
+
+.fa-arrow-up:before {
+    font-size: 24px;
+}
+
+@keyframes to-bottom {
+    from {
+        bottom: 100%;
+        opacity: 0;
+    }
+    to {
+        bottom: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes to-top {
+    from {
+        bottom: 20px;
+        opacity: 1;
+    }
+    to {
+        bottom: 100%;
+        opacity: 0;
+    }
+}

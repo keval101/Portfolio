@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 1024px) {
     :root {
-        --max-width-limit: 768px;
+        --max-width-limit: 900px;
     }
 }
 
@@ -46,6 +46,18 @@
     }
 }
 
+@media screen and (max-width: 420px) {
+    :root {
+        --max-width-limit: 360px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    :root {
+        --max-width-limit: 280px;
+    }
+}
+
 * {
     @apply box-border m-0 p-0;
     scroll-behavior: smooth;
@@ -53,6 +65,14 @@
 
 html {
     font-size: 62.5%;
+
+    @screen 2xl-max {
+        font-size: 55%;
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 52%;
+    }
 
     @screen xl-max {
         font-size: 50%;
@@ -68,7 +88,12 @@ body {
     overflow-x: hidden;
     background-color: var(--bg-color);
     color: var(--text-color);
+    letter-spacing: 1px;
     // background-color: var(--background-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
 }
 
 //container css
@@ -79,7 +104,7 @@ body {
 
 //section css
 .section {
-    @apply py-28;
+    @apply py-36;
 
     &-title {
         @apply uppercase font-semibold mb-16;

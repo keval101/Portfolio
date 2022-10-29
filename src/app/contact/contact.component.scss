@@ -1,25 +1,42 @@
 .contact {
-    background: linear-gradient(transparent 50%, var(--bg-secondary-color) 50%) ;
+    @apply py-60;
+    background: linear-gradient(transparent 50%, var(--bg-secondary-color) 50%);
     &__container {
-        div:first-child {
-            background-color: rgb(53, 54, 56)
+        &--child {
+            background-color: rgb(53, 54, 56);
+
+            @media screen and (max-width: 420px){
+                @apply px-12 py-12 items-start;
+                flex-direction: column;
+            }
+
         }
-        // width: 100vw;
-        // height: 100vh;
+        a {
+            @media screen and (max-width: 420px){
+                @apply mt-12;
+            }
+        }
     }
     
     &__content {
-        // width: 60%;
-        // background-color: red;
-        // background-color: rgba(61, 62, 66, 0.4);
+
+        @media screen and (max-width: 420px){
+            @apply w-full p-0;
+        }
+
         &--heading {
             @apply font-bold;
             font-size: 5rem;
             line-height: 1;
+
+            @media screen and (max-width: 420px){
+                font-size: 3rem;
+            }
         }
 
         &--description {
             @apply mt-12;
+            letter-spacing: 0.2px;
             font-size: 1.6rem;
             color: var(--secondary-color);
         }

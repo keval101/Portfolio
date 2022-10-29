@@ -1,4 +1,6 @@
 .projects {
+    background-color: var(--bg-secondary-color);
+
     &__grid {
         @apply grid;
         grid-template-columns: repeat(2, 1fr);
@@ -12,6 +14,10 @@
     &__item {
         &--title {
             font-size: 2.4rem;
+
+            @screen md-max {
+                font-size: 2.6rem 
+            }
         }
 
         &--knowmore {

@@ -26,6 +26,10 @@
             bottom: 40px;
             max-width: var(--max-width-limit);
 
+            @screen sm-max {
+                @apply flex justify-between;
+            }
+
             a {
                 &:not(:last-child) {
                     @apply mb-10
@@ -80,6 +84,12 @@
             font-size: 20rem;
             color: #dddddd;
             letter-spacing: 3rem;
+            animation: reveal 3000ms ease-in-out forwards 200ms,
+            glow 2500ms linear infinite 2000ms;
+
+            @screen md-max {
+                letter-spacing: 1.8rem;
+            }
 
             @screen sm-max {
                 font-size: 12rem
@@ -87,3 +97,18 @@
         }
     }
 }
+
+@keyframes glow {
+    40% {
+      text-shadow: 0 0 5px #fff;
+    }
+}
+
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }

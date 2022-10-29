@@ -1,5 +1,14 @@
-<app-navbar></app-navbar>
-<app-landing-page></app-landing-page>
-<app-projects></app-projects>
-<app-contact></app-contact>
-<!-- <router-outlet></router-outlet> -->
+<div class="navigation-bar" [ngClass]="{'open-menu': isMenuOpen}">
+    <app-navbar (closeSidebar)="openMenu()" [scroll]="scroll"></app-navbar>
+</div>
+<router-outlet></router-outlet>
+
+<button class="menu-toggle" *ngIf="isMobileScreen" (click)="openMenu()" [ngClass]="{paddingClass: isMenuOpen}">
+    <span class="line" [ngClass]="{'line1': isMenuOpen}"></span>
+    <span class="line" [ngClass]="{'line2': isMenuOpen}"></span>
+    <span class="line" [ngClass]="{'line3': isMenuOpen}"></span>
+</button>
+
+<button class="top-toggle" (click)="backToTop()" *ngIf="isScrollDown" [class.toggle]="isScrollClicked">
+    <i class="fas fa-arrow-up"></i>
+</button>

@@ -1,0 +1,9 @@
+footer {
+    @apply text-center py-10 text-2xl;
+    color: rgba(255,255,255,0.5);
+
+    a:hover {
+        color: var(--primary-color);
+        transition: all 0.2s ease;
+    }
+}
