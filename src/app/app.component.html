@@ -3,7 +3,7 @@
 </div>
 <router-outlet></router-outlet>
 
-<button class="menu-toggle" *ngIf="isMobileScreen" (click)="openMenu()" [ngClass]="{paddingClass: isMenuOpen}">
+<button class="menu-toggle" *ngIf="isMobileScreen" (click)="openMenu()" *ngIf="!loading" [ngClass]="{paddingClass: isMenuOpen}">
     <span class="line" [ngClass]="{'line1': isMenuOpen}"></span>
     <span class="line" [ngClass]="{'line2': isMenuOpen}"></span>
     <span class="line" [ngClass]="{'line3': isMenuOpen}"></span>
