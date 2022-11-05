@@ -9,6 +9,6 @@
     <span class="line" [ngClass]="{'line3': isMenuOpen}"></span>
 </button>
 
-<button class="top-toggle" (click)="backToTop()" *ngIf="isScrollDown" [class.toggle]="isScrollClicked">
+<button class="top-toggle" (click)="backToTop()" *ngIf="isScrollDown" *ngIf="!loading" [class.toggle]="isScrollClicked">
     <i class="fas fa-arrow-up"></i>
 </button>
