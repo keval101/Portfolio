@@ -1,4 +1,4 @@
-<div class="navigation-bar" [ngClass]="{'open-menu': isMenuOpen}">
+<div class="navigation-bar" [ngClass]="{'open-menu': isMenuOpen}" *ngIf="!loading">
     <app-navbar (closeSidebar)="openMenu()" [scroll]="scroll"></app-navbar>
 </div>
 <router-outlet></router-outlet>

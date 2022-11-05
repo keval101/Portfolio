@@ -12,10 +12,15 @@ export class AppComponent {
   isScrollClicked: boolean;
   scroll: number;
   isScrollDown: boolean;
+  loading = true;
 
   constructor(private renderer: Renderer2) {}
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.loading = false;
+    }, 1500);
+    
     this.renderer.listen(window, 'scroll', ($event) => {
       // const scroll = (window.scrollY / this.sections);
       this.scroll = window.scrollY;

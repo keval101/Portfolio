@@ -3,6 +3,16 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: 'Conneqt Regular';
+    src: url('assets/fonts/ConneqtRegular.ttf');
+}
+
+@font-face {
+    font-family: 'Carnova Semibold';
+    src: url('assets/fonts/CarnovaSemibold.otf');
+}
+
 /* root colours */
 :root {
     --bg-color: #1c1d21;
