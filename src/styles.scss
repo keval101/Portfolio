@@ -130,6 +130,18 @@ body {
     font-size: 2rem;
     letter-spacing: 1px;
     background-color: #f3c027;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: #eeb405;
+        transition: all 0.3s ease-in;
+    }
+
+    &-outline{
+        @apply px-12 rounded-full;
+        background-color: transparent;
+        border: 1px solid #f3c027;
+        font-size: 1.2rem;
+    }
 }
 
 //scroll-bar css

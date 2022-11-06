@@ -11,7 +11,8 @@ import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { DefaultPageComponent } from './default-page/default-page.component';
-
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +23,13 @@ import { DefaultPageComponent } from './default-page/default-page.component';
     ServicesComponent,
     FooterComponent,
     AboutComponent,
-    DefaultPageComponent
+    DefaultPageComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

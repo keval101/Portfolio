@@ -20,9 +20,10 @@ export class AppComponent {
     setTimeout(() => {
       this.loading = false;
     }, 1500);
+
+    sessionStorage.setItem('loading', 'false');
     
     this.renderer.listen(window, 'scroll', ($event) => {
-      // const scroll = (window.scrollY / this.sections);
       this.scroll = window.scrollY;
       if(window.scrollY > 0){
         this.isScrollDown = true;
@@ -47,4 +48,6 @@ export class AppComponent {
     this.isScrollClicked = true;
     window.scrollTo(0,0);
   }
+
+  ngOn
 }

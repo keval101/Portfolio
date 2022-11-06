@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
   }
   
   checkForActiveClass(event: any): void {
+    // event.preventDefault();
     const items: HTMLCollection = document.getElementsByClassName('navbar__item');
     for(let i = 0; i < items.length; i++) {
       if(items[i].classList.contains('active')) {

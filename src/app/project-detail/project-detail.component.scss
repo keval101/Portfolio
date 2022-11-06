@@ -1,0 +1,86 @@
+.section {
+    @apply pt-64;
+    &-title {
+        @apply mb-0;
+        font-size: 6rem;
+
+        @screen md-max {
+            font-size: 4rem
+        }
+
+        @screen sm-max {
+            font-size: 3rem
+        }
+    }
+}
+
+
+.project {
+    &__images {
+        @apply grid grid-cols-2 grid-flow-row gap-8;
+        
+        @screen md-max {
+            @apply grid-cols-1;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__content {
+        font-size: 2rem;
+        font-weight: 200;
+    }
+
+    &__thumbnail {
+        height: 500px;
+    }
+}
+
+.back-button {
+    &:hover .fa-arrow-left{
+        color: var(--text-color);
+        transition: all 0.2s ease;
+        animation: side 1.5s infinite;
+    }
+}
+
+.screenshot-title {
+    @apply mb-4;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.button {
+    @apply py-2;
+}
+
+.custom-animation {
+    font-size: 1.8rem;
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.button.outline-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: #fff;
+        color: #1c1d21;
+        transition: all 0.3s ease-in;
+    }
+}
+
+
+@keyframes side {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-10px);
+    }
+}

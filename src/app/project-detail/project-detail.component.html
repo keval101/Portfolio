@@ -1,0 +1,47 @@
+<section class="k-container section project">
+
+    <div class="flex justify-between items-center mb-12" [routerLink]="['/']">
+        <button class="button button-outline h-fit back-button">
+            <i class="fas fa-arrow-left"></i> <span class="ml-4">Back</span>
+        </button>
+        <h1 class="section-title">{{project.title}}</h1>
+    </div>
+
+    <div class="project__content flex mb-16 sm-max:flex-col">
+        <img [src]="project.thumbnailImage" alt="image" class="pr-12 project__thumbnail" *ngIf="project?.thumbnailImage">
+        <div>
+            <!-- descriptions -->
+            <p class="project__content--text">{{project.description}}</p>
+
+            <!-- API -->
+            <p class="my-8" *ngIf="project?.api">API: 
+                <a class="primary-color" [href]="project.api.link" target="_blank">{{project.api.name}}</a>
+            </p>
+
+            <!-- Technologies -->
+            <div class="flex skills mb-14">
+                <span class="mr-2">Technologies:</span>
+                <div class="flex flex-wrap">
+                    <ng-container *ngFor="let technology of project?.technologies">
+                        <img alt="medium" [src]="technology" class="m-4"/>
+                    </ng-container>
+                </div>
+            </div>
+
+            <!-- Code/Live Links -->
+            <div class="flex space-x-6">
+                <button class="button custom-animation live-button" (click)="routerToExternalLink(project.liveLink)">Live</button>
+                <button class="button custom-animation outline-button" (click)="routerToExternalLink(project.sourceLink)">Source Code</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="screenshot-title">Screenshots: </h1>
+        <div class="project__images">
+            <ng-container  *ngFor="let image of project?.imageGroup">
+                <img [src]="image" alt="image">
+            </ng-container>
+        </div>
+    </div>
+</section>
