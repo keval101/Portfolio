@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-To Start the Project install angular cli
+To Start the Project install angular cli using
 npm install -g @angular/cli
 
 to run the project run following commands
