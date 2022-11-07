@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { DefaultPageComponent } from './default-page/default-page.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,7 @@ import {HttpClientModule} from '@angular/common/http'
     FooterComponent,
     AboutComponent,
     DefaultPageComponent,
-    ProjectDetailComponent
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,
