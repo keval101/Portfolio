@@ -29,13 +29,13 @@
             &:hover .fa-arrow-right{
                 color: var(--text-color);
                 transition: all 0.2s ease;
-                animation: side 1.5s infinite;
+                animation: side-arrow 1.5s infinite;
             }
         }
     }
 }
 
-@keyframes side {
+@keyframes side-arrow {
     from {
         transform: translateX(0);
     }
