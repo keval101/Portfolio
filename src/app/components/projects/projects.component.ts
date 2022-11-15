@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FetchDataService } from '../service/fetch-data.service';
+import { FetchDataService } from '../../service/fetch-data.service';
 
 interface project {
   id: string,

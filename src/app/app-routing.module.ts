@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultPageComponent } from './default-page/default-page.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { DefaultPageComponent } from './components/default-page/default-page.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
+import { ProjectDetailComponent } from './components/project-detail/project-detail.component';
 
 const routes: Routes = [
   {

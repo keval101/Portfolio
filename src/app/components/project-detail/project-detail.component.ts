@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FetchDataService } from '../service/fetch-data.service';
+import { FetchDataService } from '../../service/fetch-data.service';
 
 @Component({
   selector: 'app-project-detail',

@@ -1,0 +1,65 @@
+<section class="about flex flex-row md-max:flex-col w-screen overflow-hidden h-screen md-max:h-full" id="about">
+    <div class="about__content">
+        <div class="flex space-x-20 flex-wrap sm-max:space-x-8">
+            <h1 class="section-title active" (click)="showAbout($event)">About</h1>
+            <h1 class="section-title" (click)="showSkills($event)">Skills</h1>
+            <h1 class="section-title" (click)="showExperience($event)">experience</h1>
+            
+        </div>
+        <div *ngIf="isAbout">
+            <div class="about__content--text">
+                My name is <span class="primary-color">Keval Vadhiya</span>. I graduated from Gujarat Technical Campus with a degree in Computer Science & Engineering. I have been working as <span class="primary-color">Angular Developer</span> for more than 
+                <span class="primary-color">3.5+ years</span>. My objective is to produce excellent final products while writing clear and intelligible code. I have a strong attention to detail and persistence. I am self-motivated, growth-oriented, and eager to learn new things.
+                <br>
+                <br>
+                In addition to coding, I also enjoy playing video games 🎮 and watching movies 📽️.
+
+                <div class="flex flex-wrap social-media space-x-8 mt-8">
+                    <a class="block w-fit" href="https://github.com/keval101"><img src="../../assets/icons/github.svg" alt="github"  width="50px" height="50px"></a>
+                    <a class="block w-fit" href="https://www.linkedin.com/in/keval-vadhiya-914064199/"><img src="../../assets/icons/linkedin.svg" alt="linkedin" width="50px" height="50px"></a>
+                    <a class="block w-fit" href="https://www.instagram.com/keval_vadhiya101/"><img src="../../assets/icons/instagram.svg" alt="instagram" width="50px" height="50px"></a>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="isSkills">
+            <p class="text-5xl font-thin mb-8 skill-title">Technologies:</p>
+            <div class=" flex skills flex-wrap">
+                <img alt="medium" [src]="TechTags.HTML"/>
+                <img alt="medium" [src]="TechTags.CSS"/>
+                <img alt="medium" [src]="TechTags.SCSS"/>
+                <img alt="medium" [src]="TechTags.TailwindCSS"/>
+                <img alt="medium" [src]="TechTags.JAVASCRIPT"/>
+                <img alt="medium" [src]="TechTags.TypeScript"/>
+                <img alt="medium" [src]="TechTags.Angular"/>
+                <img alt="medium" [src]="TechTags.MaterialUI"/>
+                <img alt="medium" [src]="TechTags.MaterialDesign"/>
+                <img alt="medium" [src]="TechTags.GIT"/>
+                <img alt="medium" [src]="TechTags.ApolloGraphQL"/>
+            </div>
+            
+            <p class="text-5xl font-thin mt-20 mb-8 skill-title">Tools:</p>
+            <div class=" flex skills flex-wrap">
+                <img alt="medium" [src]="TechTags.Azure_DevOps"/>
+                <img alt="medium" [src]="TechTags.Jira"/>
+                <img alt="medium" [src]="TechTags.VSCode">
+                <img alt="medium" [src]="TechTags.AdobeXD"/>
+                <img alt="medium" [src]="TechTags.Figma"/>
+                <img alt="medium" [src]="TechTags.AdobePhotoshop"/>
+                <img alt="medium" [src]="TechTags.Swagger"/>
+            </div>
+        </div>
+
+        <div *ngIf="isExperience">
+            <div class="experience__card flex flex-col">
+                <h2 class="font-semibold primary-color">Angular Developer</h2>
+                <p class="text-4xl my-4">Softrefine Technology</p>
+                <div class="flex space-x-6 flex-wrap">
+                    <p class="flex items-center experience__card--text"> <img src="../../assets/icons/location.svg" width="20px" height="20px" alt="location" class="mr-4"> Junagadh, Gujarat </p>
+                    <p class="flex items-center experience__card--text"> <img src="../../assets/icons/work.svg" width="20px" height="20px" alt="employee" class="mr-4"> June 2019 - Present </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="../../assets/images/keval.jpeg" alt="" class="w-auto h-full about__image" #img>
+</section>

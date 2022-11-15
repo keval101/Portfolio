@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { TechTags } from 'src/app/enums/enums';
 
 @Component({
   selector: 'app-about',
@@ -10,6 +11,7 @@ export class AboutComponent implements OnInit {
   isAbout: boolean;
   isSkills: boolean;
   isExperience: boolean;
+  TechTags = TechTags
   constructor(private renderer: Renderer2) { }
 
   ngOnInit(): void {
