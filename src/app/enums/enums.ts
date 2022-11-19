@@ -5,7 +5,7 @@ export enum TechTags {
     TailwindCSS = "assets/icons/Tailwind_CSS.svg",
     JAVASCRIPT = "assets/icons/JavaScript.svg",
     TypeScript = "assets/icons/TypeScript.svg",
-    Angular = "assets/icons/Angular-tag.svg",
+    Angular = "assets/icons/Angular tag.svg",
     MaterialUI = "assets/icons/Material UI.svg",
     MaterialDesign = "assets/icons/material design.svg",
     GIT = "assets/icons/GIT.svg",
