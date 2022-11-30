@@ -32,10 +32,25 @@
     &__content {
         font-size: 2rem;
         font-weight: 200;
+
+        &--text {
+            @screen md-max {
+                margin-top: 10px;
+            }
+            
+            @screen sm-max {
+                font-size: 14px
+            }
+        }
     }
 
     &__thumbnail {
         height: 500px;
+
+        @screen md-max {
+            width: 375px;
+            height: auto
+        }
     }
 }
 

@@ -7,20 +7,20 @@
         <h1 class="section-title">{{project.title}}</h1>
     </div>
 
-    <div class="project__content flex mb-16 sm-max:flex-col">
+    <div class="project__content flex mb-16 md-max:flex-col">
         <img [src]="project.thumbnailImage" alt="image" class="pr-12 project__thumbnail" *ngIf="project?.thumbnailImage">
         <div>
             <!-- descriptions -->
             <p class="project__content--text">{{project.description}}</p>
 
             <!-- API -->
-            <p class="my-8" *ngIf="project?.api">API: 
+            <p class="my-8 project__content--text" *ngIf="project?.api">API: 
                 <a class="primary-color" [href]="project.api.link" target="_blank">{{project.api.name}}</a>
             </p>
 
             <!-- Technologies -->
-            <div class="flex skills mb-14">
-                <span class="mr-2">Technologies:</span>
+            <div class="flex skills mb-14 md-max:flex-col">
+                <span class="mr-2 project__content--text">Technologies:</span>
                 <div class="flex flex-wrap">
                     <ng-container *ngFor="let technology of project?.technologies">
                         <img alt="medium" [src]="technology" class="m-4"/>
