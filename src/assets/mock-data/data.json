@@ -32,7 +32,7 @@
             "title": "Free Pc Games",
             "id": "freePcGames",
             "thumbnailImage": "assets/images/gaming.jpg",
-            "description": "Using the Free Bhagavad Gita API, I created this project using Angular, CSS, Java Script, SCSS, and HTML. Furthermore, I used the Tailwind CSS framework. I have displayed every chapter and verse of the Bhagvad Gita. The user can jump right to any verse in any chapter. I have provided descriptions for each chapter and verse. Also, a verse summary is provided so that the user can understand the meaning of each verse. Increase the website's SEO as well. Moreover, I'm thinking about adding Hindi language support.",
+            "description": "Angular, CSS, Java Script, Bootstrap, and HTML were all used in the creation of this project. I used a no-cost gaming API. Offer free to play games both online and offline. Any game can be filtered using a variety of criteria, including anime, battle, race, and more. The user can see all game information, including screenshots and system requirements.",
             "api": {
                 "link": "https://www.freetogame.com/api-doc",
                 "name": "Free Games API"
