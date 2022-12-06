@@ -3,7 +3,7 @@
         <h1 class="section-title">Featured Projects</h1>
         <div class="projects__grid">
             <div class="projects__item" *ngFor="let project of projects">
-                <img [src]="project.image" alt="bhagavad-gita" class="mb-5">
+                <img [src]="project.image" alt="image" class="mb-5">
                 <h3 class="projects__item--title mb-4">{{project.title}}</h3>
                 <button class="projects__item--knowmore" [routerLink]="['/project-detail', project.id]">know more <i class="fa-solid fa-arrow-right"></i></button>
             </div>

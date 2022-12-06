@@ -26,6 +26,32 @@
             ],
             "liveLink": "https://bhagavad-gita.netlify.app",
             "sourceLink": "https://github.com/keval101/BhagvadGita"
+        },
+        {
+            "image": "assets/images/free-pc-games.png",
+            "title": "Free Pc Games",
+            "id": "freePcGames",
+            "thumbnailImage": "assets/images/gaming.jpg",
+            "description": "Using the Free Bhagavad Gita API, I created this project using Angular, CSS, Java Script, SCSS, and HTML. Furthermore, I used the Tailwind CSS framework. I have displayed every chapter and verse of the Bhagvad Gita. The user can jump right to any verse in any chapter. I have provided descriptions for each chapter and verse. Also, a verse summary is provided so that the user can understand the meaning of each verse. Increase the website's SEO as well. Moreover, I'm thinking about adding Hindi language support.",
+            "api": {
+                "link": "https://www.freetogame.com/api-doc",
+                "name": "Free Games API"
+            },
+            "imageGroup": [
+                "https://user-images.githubusercontent.com/62419921/205966871-291cfa0b-5ef5-4469-85f2-272b3cf933db.JPG",
+                "https://user-images.githubusercontent.com/62419921/205966891-41fcd5d8-a111-4c60-bd30-0a071aee9fee.JPG",
+                "https://user-images.githubusercontent.com/62419921/205966909-bf9aad81-d0c9-463e-9505-6b1134d79a13.JPG",
+                "https://user-images.githubusercontent.com/62419921/205966926-dcc5a3de-7901-48c7-af9a-b75b72163912.JPG"
+            ],
+            "technologies": [
+                "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+                "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+                "https://img.shields.io/badge/Bootstrap-563d7c?style=for-the-badge&logo=bootstrap&logoColor=white",
+                "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+                "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+            ],
+            "liveLink": "https://freepcgames.netlify.app/",
+            "sourceLink": "https://github.com/keval101/FreeGamesSite"
         }
     ]
 } 
