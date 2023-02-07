@@ -10,7 +10,7 @@ const routes: Routes = [
     component: DefaultPageComponent
   },
   {
-    path: 'project-detail/:id',
+    path: 'projects/:id',
     component: ProjectDetailComponent
   },
 ];
