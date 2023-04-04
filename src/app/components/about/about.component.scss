@@ -75,7 +75,7 @@
 
 .experience {
     &__card {
-        @apply p-10 rounded-md;
+        @apply p-10 rounded-md relative overflow-hidden;
         width: 100%;
         min-height: 150px;
         background-color: rgba(61, 62, 66, 0.2);
@@ -92,6 +92,21 @@
         &--text {
             font-size: 1.8rem;
         }
+
+        &--years {
+            position: absolute;
+            right: 0px;
+            font-size: 1.8rem;
+            background: var(--primary-color);
+            padding: 0px 8px 8px 26px;
+            top: 0;
+            border-radius: 0 0 0px 50px;
+            animation: slide-in 0.8s ease;
+
+            @media screen and (max-width: 992px) {
+                display: none;
+            }
+        }
     }
 }
 
@@ -99,5 +114,15 @@
     @screen sm-max {
         width: 40px;
         height: 40px
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        right: -100px;
+    }
+
+    100% {
+        right: 0;
     }
 }

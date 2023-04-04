@@ -17,6 +17,7 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.isAbout = true;
 
+    this.calculateExperience()
     this.renderer.listen(window, 'load', ($event) => {
       if(window.screen.availWidth > 769) {
         console.log(window.screen.availWidth);
@@ -59,5 +60,20 @@ export class AboutComponent implements OnInit {
         event.target.classList.add('active')
       }
     }
+  }
+
+
+  calculateExperience(): string {
+    const joiningDate = new Date('06-15-2021');
+    const currentDate = new Date()
+    console.log(joiningDate, currentDate)
+    var startMonth = joiningDate.getFullYear() * 12 + joiningDate.getMonth();  
+    var endMonth = currentDate.getFullYear() * 12 + currentDate.getMonth();
+    var monthInterval = (endMonth - startMonth);
+
+    var yearsOfExperience = Math.floor (monthInterval / 12);
+    var monthsOfExperience = monthInterval % 12;
+
+    return `${yearsOfExperience}.${monthsOfExperience}`
   }
 }
