@@ -144,6 +144,13 @@ body {
     }
 }
 
+.up-down-animation {
+    font-size: 1.8rem;
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
 //scroll-bar css
 ::-webkit-scrollbar {
     width: 4px;

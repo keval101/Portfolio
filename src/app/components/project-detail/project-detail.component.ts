@@ -22,7 +22,6 @@ export class ProjectDetailComponent implements OnInit {
       const projectId = res['id']
       this.dataService.getProject(projectId).subscribe(project =>{
         this.project = project
-        console.log(this.project);
       });
     })
   }

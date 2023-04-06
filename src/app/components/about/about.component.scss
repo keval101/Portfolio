@@ -110,6 +110,17 @@
     }
 }
 
+.button.outline-button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in;
+    &:hover {
+        background-color: #fff;
+        color: #1c1d21;
+        transition: all 0.3s ease-in;
+    }
+}
+
 .social-media img{
     @screen sm-max {
         width: 40px;

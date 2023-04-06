@@ -20,7 +20,6 @@ export class AboutComponent implements OnInit {
     this.calculateExperience()
     this.renderer.listen(window, 'load', ($event) => {
       if(window.screen.availWidth > 769) {
-        console.log(window.screen.availWidth);
         const screenHeight = window.screen.availHeight
         const image  = this.image.nativeElement.offsetHeight;
         const finalSize = screenHeight - image;
@@ -66,7 +65,6 @@ export class AboutComponent implements OnInit {
   calculateExperience(): string {
     const joiningDate = new Date('06-15-2021');
     const currentDate = new Date()
-    console.log(joiningDate, currentDate)
     var startMonth = joiningDate.getFullYear() * 12 + joiningDate.getMonth();  
     var endMonth = currentDate.getFullYear() * 12 + currentDate.getMonth();
     var monthInterval = (endMonth - startMonth);
@@ -75,5 +73,15 @@ export class AboutComponent implements OnInit {
     var monthsOfExperience = monthInterval % 12;
 
     return `${yearsOfExperience}.${monthsOfExperience}`
+  }
+
+  downloadCV(): void{
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', '../../../assets/files/Keval-Vadhiya-AngularDev-1.9Years.pdf');
+    link.setAttribute('download', 'Keval-Vadhiya-AngularDev-1.9Years.pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 }

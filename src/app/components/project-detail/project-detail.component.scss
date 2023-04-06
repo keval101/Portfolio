@@ -72,13 +72,6 @@
     @apply py-2;
 }
 
-.custom-animation {
-    font-size: 1.8rem;
-    &:hover {
-        transform: translateY(-4px);
-    }
-}
-
 .button.outline-button {
     background-color: transparent;
     border: 1px solid #fff;

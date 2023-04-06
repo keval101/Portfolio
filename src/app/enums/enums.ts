@@ -18,4 +18,6 @@ export enum TechTags {
     Figma = "assets/icons/Figma.svg",
     AdobePhotoshop = "assets/icons/Adobe Photoshop.svg",
     Swagger = "assets/icons/Swagger.svg",
+    NestJs = "assets/icons/NestJs.svg",
+    Netlify = "assets/icons/Netlify.svg",
 }
