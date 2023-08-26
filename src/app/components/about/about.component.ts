@@ -78,8 +78,8 @@ export class AboutComponent implements OnInit {
   downloadCV(): void{
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../../assets/files/Keval-Vadhiya-AngularDev-1.9Years.pdf');
-    link.setAttribute('download', 'Keval-Vadhiya-AngularDev-1.9Years.pdf');
+    link.setAttribute('href', '../../../assets/files/Keval_Vadhiya_AngularDev_2Years.pdf');
+    link.setAttribute('download', 'Keval_Vadhiya_AngularDev_2Years.pdf');
     document.body.appendChild(link);
     link.click();
     link.remove();

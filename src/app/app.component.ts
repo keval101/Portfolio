@@ -53,11 +53,11 @@ export class AppComponent {
   }
 
   addSEOtags(): void  {
-    const description = "My name is Keval Vadhiya. I graduated from Gujarat Technical Campus with a degree in Computer Science & Engineering. I have been working as Angular Developer for more than 3.5+ years. My objective is to produce excellent final products while writing clear and intelligible code. I have a strong attention to detail and persistence. I am self-motivated, growth-oriented, and eager to learn new things";
+    const description = "Discover the expertise of Keval Vadhiya, a seasoned Angular Developer who specializes in crafting responsive web applications with a strong foundation in component-based architecture. With a passion for Angular development, Keval Vadhiya excels in API integration, state management, and code optimization, ensuring high-performance applications that work seamlessly across devices and browsers. As a dedicated Angular expert, Keval Vadhiya is committed to continuous learning and delivering top-notch solutions. Explore the portfolio to witness Keval Vadhiya's proficiency in Angular and the remarkable user experiences created through mobile-responsive design and cross-browser compatibility.";
 
     this.meta.addTags([
       { name: "description", content: description },
-      { name: 'keywords', content: 'Keval, Keval Vadhiya, Vadhiya, Angular developer, Angular freelancer, Frontend developer, Developer, Keval Vadhiya netlify, Keval Vadhiya portfolio, Portfolio site, Frontend dev portfolio, Angular dev, Angular' },
+      { name: 'keywords', content: 'Angular Developer, Angular Development, Responsive Web Applications, Component-Based Architecture, API Integration in Angular, State Management in Angular, Front-End Excellence, Code Optimization, Testing and Debugging, Mobile-Responsive Design, Cross-Browser Compatibility, Angular Expert, Web Application Developer, UI/UX Design in Angular, NgRx, RxJS, Front-End Collaboration, Continuous Learning, Performance Optimization, Angular Portfolio, Keval, Keval Vadhiya, Keval Vadhiya Angular Developer, Angular Freelancer, Keval Freelancer' },
       { name: 'author', content: 'Keval Vadhiya' },
       { name: "image", content: '	https://kevalvadhiyaa.netlify.app/assets/images/logofav.png'},
       { property: 'og:type', content: 'website' },
