@@ -3,15 +3,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@font-face {
-    font-family: 'Conneqt Regular';
-    src: url('assets/fonts/ConneqtRegular.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
 
-@font-face {
-    font-family: 'Carnova Semibold';
-    src: url('assets/fonts/CarnovaSemibold.otf');
-}
+// @font-face {
+//     font-family: 'Conneqt Regular';
+//     src: url('assets/fonts/ConneqtRegular.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Carnova Semibold';
+//     src: url('assets/fonts/CarnovaSemibold.otf');
+// }
 
 /* root colours */
 :root {
@@ -94,7 +96,10 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    // font-family: 'Inter', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     background-color: var(--bg-color);
     color: var(--text-color);

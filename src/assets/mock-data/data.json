@@ -52,6 +52,29 @@
             ],
             "liveLink": "https://freepcgames.netlify.app/",
             "sourceLink": "https://github.com/keval101/FreeGamesSite"
+        },
+        {
+            "image": "assets/images/trade-tracker.png",
+            "title": "Trade Tracker",
+            "id": "trade-tracker",
+            "thumbnailImage": "https://tradetracker-io.vercel.app/bg1.dcc57cc054541877.jpg",
+            "description": "I've developed a Trade Tracker application using Angular for the front-end and NestJS for the backend. The user interface is enhanced with Primeng and Tailwind CSS for a stylish look and feel. With this app, users can easily monitor their daily investments by recording trade details such as quantity, investment amount, profitability, and remaining capital after each trade. Additionally, I've included a section with links to YouTube channels where users can learn about the stock market. Furthermore, I'm actively working on adding predictive features to help users with market forecasts, offering insights into market direction and key levels. I'm also planning to incorporate educational materials on chart patterns for users interested in learning more about trading strategies.",
+            "imageGroup": [
+                "https://user-images.githubusercontent.com/62419921/275194823-838f0589-c880-4ad4-98aa-707955b42dad.png",
+                "https://user-images.githubusercontent.com/62419921/275194830-31be2c31-e3ed-4dd5-ad68-967896fefbb8.png",
+                "https://user-images.githubusercontent.com/62419921/275194825-80f4c3cb-2110-4238-8d9d-66a38febf448.png",
+                "https://user-images.githubusercontent.com/62419921/275194829-22b4d4cc-e455-4938-9e64-0d502f2871cc.png"
+            ],
+            "technologies": [
+                "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+                "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+                "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+                "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+                "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white",
+                "https://img.shields.io/badge/NESTJS-DD0031?style=for-the-badge&logo=nestjs&logoColor=white"
+            ],
+            "liveLink": "https://tradetracker-io.vercel.app/",
+            "sourceLink": "https://github.com/keval101/tradetracker.io/"
         }
     ]
 } 
