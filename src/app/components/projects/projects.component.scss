@@ -20,6 +20,15 @@
             }
         }
 
+        img {
+            min-height: 380px;
+            object-fit: cover;
+
+            @screen sm-max {
+                min-height: 150px;
+            }
+        }
+
         &--knowmore {
             @apply uppercase;
             font-size: 1.6rem;

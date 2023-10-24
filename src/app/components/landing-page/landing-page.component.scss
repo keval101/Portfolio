@@ -35,6 +35,10 @@
         p {
             font-size: 4rem; 
             font-family: 'Carnova Semibold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            @screen sm-max {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -60,7 +64,7 @@
                 right: 3rem;
 
                 @screen sm-max {
-                    width: 70%
+                    width: 60%
                 }
             }
         }
