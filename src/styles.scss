@@ -136,6 +136,8 @@ body {
     letter-spacing: 1px;
     background-color: #f3c027;
     transition: all 0.3s ease-in;
+    font-size: 1.8rem;
+
     &:hover {
         background-color: #eeb405;
         transition: all 0.3s ease-in;
@@ -147,10 +149,13 @@ body {
         border: 1px solid #f3c027;
         font-size: 1.2rem;
     }
+    
+    @screen sm-max {
+        font-size: 14px;
+    }
 }
 
 .up-down-animation {
-    font-size: 1.8rem;
     &:hover {
         transform: translateY(-4px);
     }

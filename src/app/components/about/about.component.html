@@ -1,6 +1,6 @@
 <section class="about flex flex-row md-max:flex-col w-screen overflow-hidden h-screen md-max:h-full" id="about">
     <div class="about__content">
-        <div class="flex space-x-20 flex-wrap sm-max:space-x-8">
+        <div class="flex space-x-20 sm-max:space-x-8">
             <h1 class="section-title active" (click)="showAbout($event)">About</h1>
             <h1 class="section-title" (click)="showSkills($event)">Skills</h1>
             <h1 class="section-title" (click)="showExperience($event)">experience</h1>
@@ -67,11 +67,11 @@
             <div class="experience__card flex flex-col">
                 <h2 class="font-semibold primary-color">Angular Developer</h2>
                 <p class="text-4xl my-4">Softrefine Technology</p>
-                <div class="flex space-x-6 flex-wrap">
+                <div class="flex space-x-6 flex-wrap sm-max:space-x-0">
                     <p class="flex items-center experience__card--text"> <img src="../../assets/icons/location.svg" width="20px" height="20px" alt="location" class="mr-4"> Junagadh, Gujarat </p>
                     <p class="flex items-center experience__card--text"> <img src="../../assets/icons/work.svg" width="20px" height="20px" alt="employee" class="mr-4"> June 2021 - Present </p>
                 </div>
-                <span class="experience__card--years">Experience {{calculateExperience()}}+ Years</span>
+                <span class="experience__card--years"><span>Experience</span> {{calculateExperience()}}+ Years</span>
             </div>
         </div>
     </div>

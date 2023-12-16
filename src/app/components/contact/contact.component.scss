@@ -39,6 +39,10 @@
             letter-spacing: 0.2px;
             font-size: 2rem;
             color: var(--secondary-color);
+
+            @screen sm-max {
+                font-size: 14px;
+            }
         }
     }
 }

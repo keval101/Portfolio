@@ -41,6 +41,10 @@
             @screen md-max {
                 font-size: 2.4rem 
             }
+
+            @screen sm-max {
+                font-size: 16px 
+            }
         }
 
         &--text {
@@ -59,6 +63,10 @@
 
             @screen md-max {
                 font-size: 2rem 
+            }
+
+            @screen sm-max {
+                font-size: 14px 
             }
         }
     }

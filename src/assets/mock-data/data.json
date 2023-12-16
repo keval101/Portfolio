@@ -28,6 +28,29 @@
             "sourceLink": "https://github.com/keval101/BhagvadGita"
         },
         {
+            "image": "https://user-images.githubusercontent.com/62419921/275189987-1a751208-f37e-4681-9f9a-74973a781bfc.png",
+            "title": "Quick Blog",
+            "id": "quick-blog",
+            "thumbnailImage": "assets/images/blogs.jpg",
+            "description": "I've created a user-friendly website using Angular, Tailwind CSS, PrimeNG, and other technologies. This website is all about different topics like sports, global news, social issues, and economics. It's designed to be easily found on search engines like Google, thanks to special features like Angular Server-Side Rendering, sitemaps, and SEO meta tags. Visitors can easily search for articles on topics they're interested in. You can find this website live on Vercel, making it accessible to everyone.",
+            "imageGroup": [
+                "https://user-images.githubusercontent.com/62419921/275189987-1a751208-f37e-4681-9f9a-74973a781bfc.png",
+                "https://user-images.githubusercontent.com/62419921/275190002-67f23bdc-3cf8-4d70-8042-1fe02c27c5cc.png",
+                "https://user-images.githubusercontent.com/62419921/275190015-8205f64e-3773-41b3-8da3-d7a4b9afa74d.png",
+                "https://user-images.githubusercontent.com/62419921/275190028-4042d823-3cd1-4bcf-a8e8-e50669ea4107.png"
+            ],
+            "technologies": [
+                "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
+                "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
+                "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
+                "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
+                "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white",
+                "https://img.shields.io/badge/PrimeNg-DD0031?style=for-the-badge&logo=angular&logoColor=white"
+            ],
+            "liveLink": "https://quickblogs.vercel.app",
+            "sourceLink": "https://github.com/keval101/Blog"
+        },
+        {
             "image": "assets/images/free-pc-games.png",
             "title": "Free Pc Games",
             "id": "freePcGames",
@@ -75,29 +98,6 @@
             ],
             "liveLink": "https://tradetracker-io.vercel.app/",
             "sourceLink": "https://github.com/keval101/tradetracker.io/"
-        },
-        {
-            "image": "https://user-images.githubusercontent.com/62419921/275189987-1a751208-f37e-4681-9f9a-74973a781bfc.png",
-            "title": "Quick Blog",
-            "id": "quick-blog",
-            "thumbnailImage": "assets/images/blogs.jpg",
-            "description": "I've created a user-friendly website using Angular, Tailwind CSS, PrimeNG, and other technologies. This website is all about different topics like sports, global news, social issues, and economics. It's designed to be easily found on search engines like Google, thanks to special features like Angular Server-Side Rendering, sitemaps, and SEO meta tags. Visitors can easily search for articles on topics they're interested in. You can find this website live on Vercel, making it accessible to everyone.",
-            "imageGroup": [
-                "https://user-images.githubusercontent.com/62419921/275189987-1a751208-f37e-4681-9f9a-74973a781bfc.png",
-                "https://user-images.githubusercontent.com/62419921/275190002-67f23bdc-3cf8-4d70-8042-1fe02c27c5cc.png",
-                "https://user-images.githubusercontent.com/62419921/275190015-8205f64e-3773-41b3-8da3-d7a4b9afa74d.png",
-                "https://user-images.githubusercontent.com/62419921/275190028-4042d823-3cd1-4bcf-a8e8-e50669ea4107.png"
-            ],
-            "technologies": [
-                "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
-                "https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white",
-                "https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white",
-                "https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E",
-                "https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white",
-                "https://img.shields.io/badge/PrimeNg-DD0031?style=for-the-badge&logo=angular&logoColor=white"
-            ],
-            "liveLink": "https://quickblogs.vercel.app",
-            "sourceLink": "https://github.com/keval101/Blog"
         }
     ]
 } 

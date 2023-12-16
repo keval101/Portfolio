@@ -18,6 +18,10 @@
             @screen md-max {
                 font-size: 2.6rem 
             }
+
+            @screen sm-max {
+                font-size: 18px 
+            }
         }
 
         img {
@@ -39,6 +43,10 @@
                 color: var(--text-color);
                 transition: all 0.2s ease;
                 animation: side-arrow 1.5s infinite;
+            }
+
+            @screen sm-max {
+                font-size: 14px;
             }
         }
     }
