@@ -53,7 +53,7 @@ export class AppComponent {
   }
 
   addSEOtags(): void  {
-    const description = "Discover the expertise of Keval Vadhiya, a seasoned Angular Developer who specializes in crafting responsive web applications with a strong foundation in component-based architecture. With a passion for Angular development, Keval Vadhiya excels in API integration, state management, and code optimization, ensuring high-performance applications that work seamlessly across devices and browsers. As a dedicated Angular expert, Keval Vadhiya is committed to continuous learning and delivering top-notch solutions. Explore the portfolio to witness Keval Vadhiya's proficiency in Angular and the remarkable user experiences created through mobile-responsive design and cross-browser compatibility.";
+    const description = "Explore Keval Vadhiya's Angular expertise – crafting high-performance, responsive web apps with a focus on API integration and code optimization. Witness top-notch solutions for seamless user experiences across devices and browsers";
 
     this.meta.addTags([
       { name: "description", content: description },
