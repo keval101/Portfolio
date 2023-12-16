@@ -32,6 +32,10 @@
             height: 350px;
             object-fit: cover;
             object-position: top;
+
+            @media screen and (max-width: 600px) {
+                height: auto;
+            }
         }
     }
 
