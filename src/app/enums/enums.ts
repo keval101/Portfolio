@@ -20,4 +20,5 @@ export enum TechTags {
     Swagger = "assets/icons/Swagger.svg",
     NestJs = "assets/icons/NestJs.svg",
     Netlify = "assets/icons/Netlify.svg",
+    Firebase = "assets/icons/Firebase.svg",
 }
